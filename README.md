@@ -1,5 +1,5 @@
 ## DiffCSP++
-Official Implementation of Space Group Constrained Crystal Generation (DiffCSP++).
+Official Implementation of Space Group Constrained Crystal Generation (DiffCSP++). Andre's implementation.
 
 ### Dependencies
 
