@@ -1,7 +1,9 @@
 from pathlib import Path
 from typing import List
+import os
 import sys
 sys.path.append('.')
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 import hydra
 import numpy as np
 import torch
@@ -121,7 +123,7 @@ def run(cfg: DictConfig) -> None:
         wandb_config = cfg.logging.wandb
         wandb_logger = WandbLogger(
             **wandb_config,
-            settings=wandb.Settings(start_method="fork"),
+            settings=wandb.Settings(start_method="thread"),
             tags=cfg.core.tags,
         )
         hydra.utils.log.info("W&B is now watching <{cfg.logging.wandb_watch.log}>!")
