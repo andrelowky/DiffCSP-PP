@@ -16,6 +16,7 @@ Also include a .env file in the root directory with the following absolute paths
 export PROJECT_ROOT="<root directory of cloned repo>"
 export HYDRA_JOBS="<subfolder for hydra>"
 export WABDB_DIR="<subfolder for wabdb>"
+export export WANDB_API_KEY="<your W&B api key here>"
 ```
 
 ### Training
