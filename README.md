@@ -11,6 +11,13 @@ pytorch_lightning==1.3.8
 pymatgen==2022.9.21
 ```
 
+Also include a .env file with the following absolute paths:
+```
+export PROJECT_ROOT="<root directory of cloned repo>"
+export HYDRA_JOBS="<subfolder for hydra>"
+export WABDB_DIR="<subfolder for wabdb>"
+```
+
 ### Training
 
 For the CSP task
@@ -25,4 +32,5 @@ For the Ab Initio Generation task
 python diffcsp/run.py data=<dataset> model=diffusion_w_type expname=<expname>
 ```
 
-The ``<dataset>`` tag can be selected from perov_5, mp_20, mpts_52 and carbon_24.
+The ``<dataset>`` tag can be selected from perov (not perov_5), mp_20, mpts_52 and carbon_24. 
+I have edited run.py to allow me to access subdirectories, and also change 'fork' to 'thread'.
