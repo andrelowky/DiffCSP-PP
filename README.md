@@ -11,7 +11,7 @@ pytorch_lightning==1.3.8
 pymatgen==2022.9.21
 ```
 
-Also include a .env file with the following absolute paths:
+Also include a .env file in the root directory with the following absolute paths:
 ```
 export PROJECT_ROOT="<root directory of cloned repo>"
 export HYDRA_JOBS="<subfolder for hydra>"
