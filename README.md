@@ -3,13 +3,7 @@ Official Implementation of Space Group Constrained Crystal Generation (DiffCSP++
 
 ### Dependencies
 
-```
-python==3.8.13
-torch==1.9.0
-torch-geometric==1.7.2
-pytorch_lightning==1.3.8
-pymatgen==2022.9.21
-```
+Use my environment file.
 
 Also include a .env file in the root directory with the following absolute paths:
 ```
